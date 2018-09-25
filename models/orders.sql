@@ -4,9 +4,9 @@ with order_payments as (
   order_id,
   {% for payment_method in payment_methods -%}
   sum(case when payment_method = '{{payment_method}}' then amount else 0 end) as {{payment_method}}_amount,
-  {% endfor %}
+  {% endfor -%}
   sum(amount) as total_amount
-  from {{ ref('raw_payments') }}
+  from {{ ref('base_payments') }}
   group by 1
 )
 
@@ -18,6 +18,6 @@ raw_orders.id
 , raw_orders.amount
 {% for payment_method in payment_methods -%}
 , order_payments.{{payment_method}}_amount
-{%- endfor %}
-from {{ ref('raw_orders') }} as raw_orders
+{% endfor -%}
+from {{ ref('base_orders') }} as raw_orders
 left join order_payments on order_payments.order_id = raw_orders.id

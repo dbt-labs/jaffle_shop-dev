@@ -16,5 +16,6 @@ clean-targets:
 
 models:
   jaffle_shop:
-    customers:
       materialized: table
+      base:
+        materialized: ephemeral
