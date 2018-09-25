@@ -11,13 +11,13 @@ with order_payments as (
 )
 
 select
-raw_orders.id
-, raw_orders.customer_id
-, raw_orders.order_date
-, raw_orders.status
-, raw_orders.amount
+base_orders.id
+, base_orders.customer_id
+, base_orders.order_date
+, base_orders.status
+, base_orders.amount
 {% for payment_method in payment_methods -%}
 , order_payments.{{payment_method}}_amount
 {% endfor -%}
-from {{ ref('base_orders') }} as raw_orders
-left join order_payments on order_payments.order_id = raw_orders.id
+from {{ ref('base_orders') }} as base_orders
+left join order_payments on order_payments.order_id = base_orders.id
