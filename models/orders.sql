@@ -2,7 +2,7 @@
 with order_payments as (
   select
   order_id,
-  {% for payment_method in payment_methods %}
+  {% for payment_method in payment_methods -%}
   sum(case when payment_method = '{{payment_method}}' then amount else 0 end) as {{payment_method}}_amount,
   {% endfor %}
   sum(amount) as total_amount
@@ -16,8 +16,8 @@ raw_orders.id
 , raw_orders.order_date
 , raw_orders.status
 , raw_orders.amount
-{% for payment_method in payment_methods %}
+{% for payment_method in payment_methods -%}
 , order_payments.{{payment_method}}_amount
-{% endfor %}
+{%- endfor %}
 from {{ ref('raw_orders') }} as raw_orders
 left join order_payments on order_payments.order_id = raw_orders.id
