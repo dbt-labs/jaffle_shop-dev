@@ -10,22 +10,26 @@ customer_orders as (
 
 ),
 
+customer_payments as (
+
+    select * from {{ ref('customer_payments') }}
+
+),
 
 final as (
 
     select
-        customers.id,
-        customers.first_name,
-        customers.last_name,
-        customers.email,
+        customers.customer_id,
         customer_orders.first_order,
         customer_orders.most_recent_order,
         customer_orders.number_of_orders,
-        customer_orders.total_order_amount
+        customer_payments.total_amount as customer_lifetime_value
 
     from customers
 
-    left join customer_orders on customers.id = customer_orders.customer_id
+    left join customer_orders using (customer_id)
+
+    left join customer_payments using (customer_id)
 
 )
 
