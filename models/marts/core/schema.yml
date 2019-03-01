@@ -48,7 +48,7 @@ models:
           - not_null
           - relationships:
               to: ref('fct_customers')
-              field: id
+              field: customer_id
 
       - name: order_date
         description: Date (UTC) that the order was placed
