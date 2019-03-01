@@ -15,11 +15,10 @@ order_payments as (
 final as (
 
     select
-        orders.id,
+        orders.order_id,
         orders.customer_id,
         orders.order_date,
         orders.status,
-        orders.amount,
 
         {% for payment_method in payment_methods -%}
 
@@ -27,11 +26,11 @@ final as (
 
         {% endfor -%}
 
-        order_payments.total_amount
+        order_payments.total_amount as amount
 
     from orders
 
-    left join order_payments on orders.id = order_payments.order_id
+    left join order_payments using (order_id)
 
 )
 
