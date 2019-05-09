@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fct_customers
+  - name: dim_customers
     description: This table has basic information about a customer, as well as some derived facts based on a customer's orders
 
     columns:
@@ -47,7 +47,7 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('fct_customers')
+              to: ref('dim_customers')
               field: customer_id
 
       - name: order_date
