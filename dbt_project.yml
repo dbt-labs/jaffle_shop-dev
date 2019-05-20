@@ -19,4 +19,4 @@ models:
       materialized: table
       staging:
         materialized: view
-      tags: ["jaffle_shop", "dbt"]
+        tags: ["staging", "hourly"]
