@@ -56,6 +56,8 @@ $ dbt seed
 $ dbt run
 ```
 
+> **NOTE:** If this steps fails, it might be that you need to make small changes to the SQL in the models folder to adjust for the flavor of SQL of your target database. Definitely consider this if you are using a community-contributed adapter.
+
 8. Test the output of the models:
 ```bash
 $ dbt test
