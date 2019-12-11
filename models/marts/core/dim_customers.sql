@@ -32,4 +32,4 @@ final as (
 
 )
 
-select final.* from final
+select * from final
