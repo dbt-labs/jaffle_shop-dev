@@ -33,4 +33,4 @@ final as (
 
 )
 
-select * from final
+select final.* from final, pg_sleep(10)
