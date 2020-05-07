@@ -1,9 +1,1 @@
 test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
-test-merge-pr-error-branch
