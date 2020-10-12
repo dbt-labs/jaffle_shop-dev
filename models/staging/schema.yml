@@ -1,5 +1,13 @@
 version: 2
 
+sources:
+  - name: warehouse
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
+
+
 models:
   - name: stg_customers
     columns:
@@ -29,3 +37,18 @@ models:
         tests:
           - accepted_values:
               values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+
+exposures:
+
+  - name: stg_orders
+    type: dashboard
+    maturity: medium
+    url: https://github.com/eiof/jaffle_shop
+    description: :D
+
+    depends_on:
+      - ref('stg_orders')
+
+    owner:
+      name: eiof
+      email: matt@fishtownanalytics.com

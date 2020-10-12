@@ -1,6 +1,6 @@
 
 name: 'jaffle_shop'
-version: '0.1'
+version: '1.0.0'
 profile: 'jaffle_shop'
 source-paths: ["models"]
 analysis-paths: ["analysis"]
