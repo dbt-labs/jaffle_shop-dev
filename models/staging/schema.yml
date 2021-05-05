@@ -1,5 +1,9 @@
 version: 2
 
+sources: 
+  - name: test
+    database: dbt
+
 models:
   - name: stg_customers
     columns:
