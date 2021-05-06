@@ -1,5 +1,18 @@
 version: 2
 
+sources:
+   - name: analytics
+     database: dbt
+     
+     freshness:
+       warn_after: {count: 1, period: day}
+       error_after: {count: 1000000, period: day}
+     tables:
+       - name: raw_customers
+       - name: raw_orders
+         loaded_at_field: order_date::timestamp
+       - name: raw_payments
+
 models:
   - name: stg_customers
     columns:
@@ -29,3 +42,18 @@ models:
         tests:
           - accepted_values:
               values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+
+exposures:
+
+   - name: stg_orders
+     type: dashboard
+     maturity: medium
+     url: https://github.com/eiof/jaffle_shop
+     description: :D
+
+     depends_on:
+       - ref('stg_orders')
+
+     owner:
+       name: eiof
+       email: matt@fishtownanalytics.com
