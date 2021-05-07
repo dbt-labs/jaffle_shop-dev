@@ -1,9 +1,7 @@
 version: 2
 
 sources:
-   - name: analytics
-     database: dbt
-     
+   - name: raw
      freshness:
        warn_after: {count: 1, period: day}
        error_after: {count: 1000000, period: day}
