@@ -9,8 +9,7 @@ sources:
        - name: raw_customers
        - name: raw_orders
          loaded_at_field: order_date::timestamp
-      #  - name: raw_payments
-       - name: raw_payment
+       - name: raw_payments
 
 models:
   - name: stg_customers
