@@ -7,7 +7,7 @@ sources:
        error_after: {count: 1000000, period: day}
      tables:
        - name: raw_customers
-       - name: raw_order
+       - name: raw_orders
          #loaded_at_field: order_date::timestamp
        - name: raw_payments
 
