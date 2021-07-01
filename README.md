@@ -1,4 +1,4 @@
-july-1/test-2
+july-1/test-3
 
 ## dbt models for `jaffle_shop`
 
