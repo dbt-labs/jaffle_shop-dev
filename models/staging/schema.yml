@@ -9,6 +9,9 @@ sources:
        - name: raw_customers
        - name: raw_orders
          loaded_at_field: order_date::timestamp
+         tests:
+            - unique
+            - not_null
        - name: raw_payments
 
 models:
@@ -47,7 +50,7 @@ exposures:
      type: dashboard
      maturity: medium
      url: https://github.com/eiof/jaffle_shop
-     description: :D
+     description: The exposure for Jaffle Shop orders.
 
      depends_on:
        - ref('stg_orders')
