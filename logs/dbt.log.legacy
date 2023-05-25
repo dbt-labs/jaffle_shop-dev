@@ -116,3 +116,13 @@ The `data-paths` config has been renamed to `seed-paths`.Please update your
 2023-05-25 16:55:31.143211 (Thread-27): handling status request
 2023-05-25 16:55:31.143656 (Thread-27): 16:55:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddc48af0>]}
 2023-05-25 16:55:31.144240 (Thread-27): sending response (<Response 4126 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 16:55:35.871797 (Thread-28): handling reload request
+2023-05-25 16:55:35.872271 (Thread-28): 16:55:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddc48a00>]}
+2023-05-25 16:55:35.872703 (Thread-28): sending response (<Response 61 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 16:55:35.895362 (Thread-29): 16:55:35  checksum: 0049c9ca814b191acba678e7b1a0d7a85eeac3e13700309cfc1ce1a2c78d3886, vars: {}, profile: user, target: None, version: 1.4.6
+2023-05-25 16:55:35.931081 (Thread-29): 16:55:35  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2023-05-25 16:55:35.931337 (Thread-29): 16:55:35  Partial parsing enabled, no changes found, skipping parsing
+2023-05-25 16:55:35.937045 (Thread-29): 16:55:35  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cdb38dc70>]}
+2023-05-25 16:55:36.061748 (Thread-30): handling status request
+2023-05-25 16:55:36.062226 (Thread-30): 16:55:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cdb405b20>]}
+2023-05-25 16:55:36.062705 (Thread-30): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
