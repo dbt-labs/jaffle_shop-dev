@@ -191,3 +191,31 @@ The `data-paths` config has been renamed to `seed-paths`.Please update your
 2023-05-25 17:00:07.094986 (Thread-50): handling status request
 2023-05-25 17:00:07.095337 (Thread-50): 17:00:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ce11dde80>]}
 2023-05-25 17:00:07.095795 (Thread-50): sending response (<Response 1903 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:00:16.338552 (Thread-51): handling reload request
+2023-05-25 17:00:16.339074 (Thread-51): 17:00:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cd6abf400>]}
+2023-05-25 17:00:16.339531 (Thread-51): sending response (<Response 61 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:00:16.362934 (Thread-52): 17:00:16  checksum: 0049c9ca814b191acba678e7b1a0d7a85eeac3e13700309cfc1ce1a2c78d3886, vars: {}, profile: user, target: None, version: 1.4.6
+2023-05-25 17:00:16.400236 (Thread-52): 17:00:16  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2023-05-25 17:00:16.400474 (Thread-52): 17:00:16  Partial parsing enabled, no changes found, skipping parsing
+2023-05-25 17:00:16.405548 (Thread-52): 17:00:16  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ce1301370>]}
+2023-05-25 17:00:16.532334 (Thread-53): handling status request
+2023-05-25 17:00:16.532838 (Thread-53): 17:00:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddbdbbe0>]}
+2023-05-25 17:00:16.533324 (Thread-53): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:00:35.230018 (Thread-54): handling status request
+2023-05-25 17:00:35.230517 (Thread-54): 17:00:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddbdb1f0>]}
+2023-05-25 17:00:35.231038 (Thread-54): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:08:22.405431 (Thread-55): handling status request
+2023-05-25 17:08:22.407290 (Thread-55): 17:08:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddbdb310>]}
+2023-05-25 17:08:22.440583 (Thread-55): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:08:22.655704 (Thread-56): handling ps request
+2023-05-25 17:08:22.656189 (Thread-56): 17:08:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ce1271160>]}
+2023-05-25 17:08:22.656628 (Thread-56): sending response (<Response 100 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:08:22.675138 (Thread-57): handling ps request
+2023-05-25 17:08:22.675484 (Thread-57): 17:08:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ce1271310>]}
+2023-05-25 17:08:22.675882 (Thread-57): sending response (<Response 100 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:08:22.826367 (Thread-58): handling status request
+2023-05-25 17:08:22.826820 (Thread-58): 17:08:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ce1271850>]}
+2023-05-25 17:08:22.827309 (Thread-58): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
+2023-05-25 17:08:31.578027 (Thread-59): handling status request
+2023-05-25 17:08:31.578542 (Thread-59): 17:08:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '100ba28c-3cc9-4ec5-9340-c57336592fab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cddbdb7c0>]}
+2023-05-25 17:08:31.579017 (Thread-59): sending response (<Response 1589 bytes [200 OK]>) to 10.1.19.42
