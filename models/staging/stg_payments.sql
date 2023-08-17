@@ -14,7 +14,7 @@ renamed as (
         id as payment_id,
         order_id,
         payment_method,
-
+        -- add a comment to run ci again
         --`amount` is currently stored in cents, so we convert it to dollars
         amount / 100 as amount
 
