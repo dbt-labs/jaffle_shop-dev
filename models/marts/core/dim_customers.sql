@@ -6,6 +6,8 @@ with customers as (
 
 customer_orders as (
 
+    
+
     select * from {{ ref('customer_orders') }}
 
 ),
