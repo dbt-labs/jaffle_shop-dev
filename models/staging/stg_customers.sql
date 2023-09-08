@@ -21,3 +21,4 @@ renamed as (
 )
 
 select * from renamed
+-- add a comment here to test
