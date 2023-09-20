@@ -33,5 +33,5 @@ final as (
     left join order_payments using (order_id)
 
 )
-
+-- add a comment or something here 
 select * from final
