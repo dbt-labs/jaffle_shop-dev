@@ -20,6 +20,7 @@ final as (
 
     select
         customers.customer_id,
+        customers.other_customer_id,
         customer_orders.first_order,
         customer_orders.most_recent_order,
         customer_orders.number_of_orders,

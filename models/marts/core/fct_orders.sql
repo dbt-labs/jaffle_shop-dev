@@ -1,4 +1,4 @@
-{% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
+{% set payment_methods = ['credit_card', 'bank_transfer', 'gift_card'] %}
 
 with orders as (
 
@@ -15,6 +15,7 @@ order_payments as (
 final as (
 
     select
+        1 as id,
         orders.order_id,
         orders.customer_id,
         orders.order_date,
