@@ -11,6 +11,12 @@ models:
           - unique
           - not_null
 
+      - name: other_customer_id
+        description: This is another unique identifier for a customer
+        data_tests:
+          - unique
+          - not_null
+
       - name: first_name
         description: Customer's first name. PII.
 
@@ -36,6 +42,11 @@ models:
     description: This table has basic information about orders, as well as some derived facts based on payments
 
     columns:
+      - name: id
+        data_tests:
+          - not_null
+        description: This is a static int for an order
+
       - name: order_id
         data_tests:
           - unique
@@ -57,7 +68,7 @@ models:
         description: '{{ doc("orders_status") }}'
         data_tests:
           - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned', 'another_status']
 
       - name: amount
         description: Total amount (AUD) of the order
@@ -66,11 +77,6 @@ models:
 
       - name: credit_card_amount
         description: Amount of the order (AUD) paid for by credit card
-        data_tests:
-          - not_null
-
-      - name: coupon_amount
-        description: Amount of the order (AUD) paid for by coupon
         data_tests:
           - not_null
 
