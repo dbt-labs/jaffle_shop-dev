@@ -15,7 +15,7 @@ order_payments as (
 final as (
 
     select
-        2 as test_field,
+        1 as test_field,
         orders.order_id,
         orders.customer_id,
         orders.order_date,
