@@ -8,6 +8,8 @@ customer_orders as (
 
     select * from {{ ref('customer_orders') }}
 
+    
+
 ),
 
 customer_payments as (
